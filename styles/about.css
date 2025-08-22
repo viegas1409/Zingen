@@ -1,7 +1,24 @@
 #about {
   background-color: var(--surface-color);
+}
 
-  & .even-colums {
-    gap: 2rem;
-  }
+#about .even-columns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+#about .even-columns > div {
+  flex: 1;
+}
+
+#about .even-columns > div:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+#about img {
+  max-width: 100%;
+  height: auto;
 }
