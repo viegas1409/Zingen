@@ -32,37 +32,3 @@ Desperte seu potencial vocal com uma experiência imersiva de karaokê — diret
    cd Zingen
 <img width="1893" height="855" alt="image" src="https://github.com/user-attachments/assets/a4b9200c-369b-4dd1-a635-9c7c1dc39fcc" />
 
-Demonstração Interativa
-
-Acesse o site Zingen – Karaokê
- e experimente ao vivo — estúdio virtual na ponta dos dedos!
-
-
-
-Estrutura do Projeto
-Zingen/
-├── index.html
-├── styles/
-│   └── index.css
-├── assets/
-│   ├── icons/
-│   └── imagens/
-└── README.md
-
-
-Próximos Passos (Roadmap)
-
- Converter para SPA usando frameworks como React, Vue ou Svelte.
-
- Implementar gravação de áudio com “playback”.
-
- Realizar deploy automático via GitHub Pages.
-
- Desenvolver versão mobile nativa (Flutter / React Native).
-
-
-
-Contribuições bem-vindas!
-
-Bug? Dúvida? Quer cantar junto? 😉
-Abra uma issue ou envie um PR, ficarei feliz em colaborar!
