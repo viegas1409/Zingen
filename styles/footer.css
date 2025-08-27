@@ -1,0 +1,123 @@
+footer {
+  background-color: #0e0e0e;
+  color: #fff;
+  font-family: 'Inter', sans-serif;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* Aumentei gap para espaçamento maior */
+}
+
+/* TOP SECTION */
+footer .top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinhado à esquerda */
+  gap: 2rem;
+  text-align: left;
+}
+
+footer .top img {
+  max-width: 140px;
+  margin-bottom: 1rem; /* espaço entre logo e links */
+}
+
+/* LINKS */
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem; /* espaço maior entre as colunas */
+}
+
+footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* tirar qualquer margem padrão */
+}
+
+footer .footer-links li.title {
+  color: #ffb84c;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 1rem; /* mais espaçamento abaixo do título */
+}
+
+footer .footer-links li a {
+  color: #d1d1d1;
+  text-decoration: none;
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.75rem; /* espaço entre os links */
+}
+
+/* BOTTOM SECTION */
+footer .bottom {
+  border-top: 1px solid #222;
+  padding-top: 1.5rem; /* mais espaçamento */
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* SOCIAL ICONS */
+footer .social-icons a {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+  margin-right: 1rem; /* espaçamento entre ícones */
+}
+
+footer .social-icons a:last-child {
+  margin-right: 0;
+}
+
+footer .social-icons a:hover {
+  opacity: 1;
+}
+
+footer .social[aria-label="tiktok"] {
+  background-image: url("../assets/icons/tiktok.svg");
+}
+
+footer .social[aria-label="instagram"] {
+  background-image: url("../assets/icons/instagram.svg");
+}
+
+footer .social[aria-label="twitter"] {
+  background-image: url("../assets/icons/x.svg");
+}
+
+footer .social[aria-label="discord"] {
+  background-image: url("../assets/icons/discord.svg");
+}
+
+/* RESPONSIVO: Telas maiores (desktop) */
+@media (min-width: 768px) {
+  footer .top {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    text-align: left;
+  }
+
+  footer .footer-links {
+    flex-direction: row;
+    justify-content: center;
+    gap: 6rem; /* aumenta o espaçamento entre colunas */
+  }
+
+  footer .bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

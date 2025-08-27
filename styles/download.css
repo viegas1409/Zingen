@@ -1,0 +1,69 @@
+#download {
+  background-color: #0f0f10;
+  border-radius: 1rem;
+  overflow: hidden; /* Garante que a imagem não ultrapasse demais no mobile */
+}
+
+.download-box {
+  position: relative;
+  padding: 3rem 1.5rem 15rem;
+  display: grid;
+  gap: 2rem;
+  border-radius: 1rem;
+  background-color: #1b1b1e; /* card interno */
+}
+
+.download-box .download-text header strong {
+  color: #ffc857;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.download-box .download-text header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.download-box .download-text p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 40rem;
+}
+
+.download-box .buttons {
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.download-image {
+  position: absolute;
+  bottom: 0;
+  right: -3.5rem;
+  width: 14.5rem;
+}
+
+.download-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 80em) {
+  .download-box {
+    padding: 8.75rem 5rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .download-image {
+    width: 29.125rem;
+  }
+
+  .download-box .download-text p {
+    max-width: 40rem;
+  }
+}
